@@ -1,0 +1,1 @@
+{"uuid":"126dfe4b-4898-4d9d-9243-afc26e5cd386","name":"LaunchChrome.setUp","children":["186e4c42-4990-4d9e-8c0f-c855c5481ac6"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1636026892523,"stop":1636026897867}],"afters":[],"start":1636026892522,"stop":1636026897868}

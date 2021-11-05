@@ -1,0 +1,149 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>TestProject</groupId>
+	<artifactId>TestProject</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<properties>
+    <aspectj.version>1.8.10</aspectj.version>
+    </properties>
+      <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+          <configuration>
+            <!-- put your configurations here -->
+          </configuration>
+        </plugin>
+        
+        
+<!--           <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.20</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>C:\Users\TK-LPT-0352\eclipse-workspace\TestProject\testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <argLine>
+                -javaagent:${settings.localRepository}/org/.../aspectjweaver-${aspectj.version}.jar
+            </argLine>
+        </configuration>
+        https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
+        <dependencies>
+        <dependency>
+    <groupId>org.aspectj</groupId>
+    <artifactId>aspectjweaver</artifactId>
+    <version>1.9.6</version>
+    <scope>runtime</scope>
+    </dependency>
+    </dependencies>
+        
+        
+      </plugin> -->
+      
+      <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.2</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+
+					<systemProperties>
+						<property>
+							<name>allure.results.directory</name>
+							<value>C:\Users\TK-LPT-0179\AppData\Local\Jenkins\.jenkins\workspace\MavenProject\allure-results</value>
+						</property>
+
+
+					</systemProperties>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.aspectj</groupId>
+						<artifactId>aspectjweaver</artifactId>
+						<version>1.9.6</version>
+						<scope>runtime</scope>
+					</dependency>
+				</dependencies>
+			</plugin>
+        
+      </plugins>
+      
+    </pluginManagement>
+  </build>
+	<dependencies>
+	
+	<dependency>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-java</artifactId>
+		<version>4.0.0-rc-1</version>
+	</dependency>
+	<dependency>
+       <groupId>org.testng</groupId>
+       <artifactId>testng</artifactId>
+       <version>6.11</version>
+        <scope>compile</scope>
+        </dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.16-beta2</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>ooxml-schemas</artifactId>
+			<version>1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>openxml4j</artifactId>
+			<version>1.0-beta</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-testng</artifactId>
+    <version>2.16.0</version>
+</dependency>
+		</dependencies>
+		
+
+
+</project>
