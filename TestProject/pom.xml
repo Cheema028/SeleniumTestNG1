@@ -60,7 +60,7 @@
 					<systemProperties>
 						<property>
 							<name>allure.results.directory</name>
-							<value>C:\Users\TK-LPT-0179\AppData\Local\Jenkins\.jenkins\workspace\MavenProject\allure-results</value>
+							<value>C:\Users\TK-LPT-0352\AppData\Local\Jenkins\.jenkins\workspace\MavenBuild\allure-results</value>
 						</property>
 
 
