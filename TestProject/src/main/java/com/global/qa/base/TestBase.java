@@ -22,7 +22,7 @@ public class TestBase {
 	public TestBase(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("C:\\Users\\TK-LPT-0352\\eclipse-workspace\\TestProject"
+			FileInputStream ip = new FileInputStream("C:\\Users\\TK-LPT-0352\\git\\SeleniumTestNG1\\TestProject"
 					+ "\\src\\main\\java\\com\\global\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {

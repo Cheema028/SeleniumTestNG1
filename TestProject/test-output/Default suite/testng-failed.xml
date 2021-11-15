@@ -3,20 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LaunchChrome">
-        <methods>
-          <include name="googleTitleTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- LaunchChrome -->
-      <class name="com.global.qa.testcases.DashboardPageTest">
+      <class name="com.global.qa.testcases.LoginPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="loginPageTitleTest"/>
           <include name="tearDown"/>
-          <include name="verifyMembershipDirTest"/>
+          <include name="loginTest"/>
+          <include name="crmLogoImageTest"/>
         </methods>
-      </class> <!-- com.global.qa.testcases.DashboardPageTest -->
+      </class> <!-- com.global.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
